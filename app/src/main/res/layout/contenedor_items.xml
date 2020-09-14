@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="10dp"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/imagenCard"
+            android:layout_width="169dp"
+            android:layout_height="210dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.103"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/textoId"
+            android:layout_width="136dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Id"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@+id/TextoNombre"
+            app:layout_constraintStart_toEndOf="@+id/imagenCard"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/TextoNombre"
+            android:layout_width="137dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="20dp"
+            android:text="Nombre"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@+id/TextoEstado"
+            app:layout_constraintStart_toEndOf="@+id/imagenCard" />
+
+        <TextView
+            android:id="@+id/TextoEstado"
+            android:layout_width="133dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Estado"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@+id/TextoAlias"
+            app:layout_constraintStart_toEndOf="@+id/imagenCard" />
+
+        <TextView
+            android:id="@+id/TextoAlias"
+            android:layout_width="134dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Alias"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@+id/TextoActor"
+            app:layout_constraintStart_toEndOf="@+id/imagenCard" />
+
+        <TextView
+            android:id="@+id/TextoActor"
+            android:layout_width="135dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="28dp"
+            android:text="Actor"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imagenCard" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
